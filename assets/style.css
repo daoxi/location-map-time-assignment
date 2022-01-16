@@ -1,0 +1,100 @@
+/* Create a subtle green/blue gradiant animated background */
+body {
+	background: linear-gradient( -45deg, #ffffff, #f5fff5, #ffffff, #f5f5ff );
+	background-size: 200% 200%;
+	animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Set formatting for button of class button1 */
+.button1{
+	color: #ffffff;
+	text-decoration: none;
+	background: #00b359;
+	padding: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	border: none;
+	transition: all 0.5s ease 0s;
+}
+
+/* Set formatting for hovering effect for button of class button1 */
+.button1:hover {
+	background: #434343;
+	letter-spacing: 2px;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.7);
+	box-shadow: 5px 40px -10px rgba(0,0,0,0.7);
+	transition: all 0.5s ease 0s;
+}
+
+/* Set formatting for input form of class input1 */
+.input1{
+	background-color: #ffffe6;
+	width : 40%;
+	padding: 5px 5px;
+	margin: 5px 0px;
+	box-sizing: border-box;
+	border: 2px solid #d9d9d9;
+	border-radius: 5px;
+}
+
+/* Set the size of the div element that contains the map */
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+/* Set formatting for h1 (heading1) elements*/
+h1 {
+	display: block;
+	font-size: 1.7em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+/* Set formatting for h2 (heading2) elements*/
+h2 {
+	display: block;
+	font-size: 1.3em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+/* Set formatting for h3 (heading3) elements*/
+h3 {
+	display: block;
+	font-size: 1.1em;
+	margin-top: 0.7em;
+	margin-bottom: 0.7em;
+	margin-left: 0;
+	margin-right: 0;
+	font-weight: bold;
+}
+
+/* Set formatting for p (paragraph) elements*/
+p {
+	display: block;
+	margin-top: 0.9em;
+	margin-bottom: 0.9em;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+

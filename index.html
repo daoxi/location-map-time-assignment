@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Daoxi Sun's Location-Map-Time Assignment</title>
+		<link rel="stylesheet" type="text/css" href="./assets/style.css" />
+		<script src="./assets/jquery-3.6.0.min.js"></script>
+		<!-- include polyfill to improve compatibility on older browsers -->
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	</head>
+	
+	<body>
+		<h1>Location-Map-Time Assignment</h1>
+			<h2>Please input a location.</h2>
+				<p>Click the button to get your client location.</p>
+				<button class="button1" onclick="getLocation()">Get my location</button>
+				<p>
+					Or, enter and select a location below (Autocomplete):
+				</p>
+				<input  class="input1" id="searchTextField" type="text" size="50" placeholder="Enter a location" autocomplete="on" runat="server" />  
+				<p>
+					Or, click anywhere (including any city/country/continent) on the map to select a location:
+				</p>
+				<!--The div element for the map -->
+				<div id="map"></div>
+			<h2>Output below</h2>
+				<div id="UtcTimestamp"></div>
+				<div id="liveClock"></div>
+				<h3 id="moreInfo">
+					More information (Time zone, coordinates, etc.) will be shown once a location is chosen...
+				</h3>
+				<p id="timeZoneInfo"></p>
+				<p id="latlngDisplay"></p>
+				
+				<!-- The API key should be included here (immediately after "key=") with usage quota (set in Google Cloud console) to prevent unexpected cost -->
+				<!-- Places library is needed for the Google Maps' Place Autocomplete feature -->
+				<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+				<script
+				src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=places"
+				async
+				></script>
+				<script
+				src="./assets/script.js"
+				></script>
+	</body>
+</html>
